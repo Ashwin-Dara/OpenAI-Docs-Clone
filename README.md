@@ -16,7 +16,7 @@ All of the code for the frontend was written essentially on the fly. In other wo
 ### 2. Refactoring and Naming Conventions: 
 Typically, when writing other projects, I aim to refactor / review the past code every ~400 lines or so. However, since the project was ~800 lines of code, I felt as if refactoring was unnecessary. Since this will not be expanded nor reused, not refactoring is something that could be got away with. However, working on larger codebases will defintely require reviewing previous code segments. 
 
-- TLDR: IN LARGER PROJECTS, REFACTORING IS NEEDED. ALSO, NAMINg CONVENTION IN CLASSES SHOULD BE BETTER. 
+- TLDR: IN LARGER PROJECTS, REFACTORING IS NEEDED. ALSO, NAMING CONVENTION IN CLASSES SHOULD BE BETTER. 
 
 ### 3. Consistency:
 Being inconsistent with this project required it to take a lot longer. Moreover, between especially longer breaks, it was more difficult to resume flow from last time. I also realize that refactoring would have been able to solve this issue of "losing flow." 
