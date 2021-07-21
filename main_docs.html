@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main_docs.css">
+    <title>OpenAI Blog -- Clone</title>
+</head>
+<body>
+    <!-- HOME BAR CONTAINER. Will use Flex for this --> 
+    <div class="HomeBarContainer">
+        <div class="OpenAI">
+            OpenAI API  
+            <div class = "BetaTag">
+                Beta
+            </div>
+        </div>
+
+        <div class="About">
+            ABOUT
+        </div>
+        <div class="Examples">
+            EXAMPLE
+        </div>
+        <div class="Docs">
+            DOCS
+        </div>
+        <div class="Pricing">
+            PRICING
+        </div>
+        <div class="LogIn">
+            LOG IN
+        </div>
+        <div class="Join">
+            JOIN >
+        </div>
+    </div>
+    
+    <div class="InformationBlock1">
+        <p class="WelcomeBanner">
+            &nbsp; Welcome GitHub Copilot, powered by OpenAI Codex <strong> > </strong>  
+            &nbsp;
+        </p>
+        
+        <h2 class="Heading">
+           OpenAI technology, just an HTTPS call away 
+        </h2>
+
+        <p class="Content">
+            Apply our API to any language task — semantic search, summarization, sentiment analysis, content generation, translation, and more — with only a few examples or by specifying your task in English.
+        </p>
+    </div>
+    
+    <div class="Buttons">
+        <button class="WaitList"> JOIN THE WAITLIST > &nbsp; </button>
+        <button class="ExploreDocs"> &#128195 EXPLORE THE DOCS &nbsp; </button>
+    </div>
+    
+    <div class="GradientContent">
+        <div class="GradientContainer">
+            <div>
+                SEMANTIC SEARCH
+            </div>
+            <div>
+                CHAT
+            </div>
+            <div>
+                CUSTOMER SERVICE
+            </div>
+            <div>
+                GENERATION 
+            </div>
+            <div>
+                PRODUCTIVITY 
+            </div>
+            <div>
+                COMPREHENSION
+            </div>
+        </div>
+
+        <div class="RLBlock">
+            
+            <div class="RLImageContainer">
+                <img src="images/mario_rl.gif" alt="" class = "MarioRL">
+                <img src="images/pr2_classifier.gif" alt="">
+
+                <img src="images/RL_policy_diagram.png" alt="" class = "RLPolicyIMG">
+            </div>
+            <h2> Key Concepts and Terminology </h2>
+
+            <p>
+                The main characters of RL are the agent and the environment. The environment is the world that the agent lives in and interacts with. At every step of interaction, the agent sees a (possibly partial) observation of the state of the world, and then decides on an action to take. The environment changes when the agent acts on it, but may also change on its own.
+
+            </p>
+            <h3>
+                Rewarding
+            </h3>
+            <p>
+                The agent also perceives a reward signal from the environment, a number that tells it how good or bad the current world state is. The goal of the agent is to maximize its cumulative reward, called return. Reinforcement learning methods are ways that the agent can learn behaviors to achieve its goal.
+
+            </p>
+            <h3> Further Reading </h3>
+            <p>
+                To talk more specifically what RL does, we need to introduce additional terminology. We need to talk about
+
+            </p>
+
+            <ul>
+                <li> states and observations, </li>
+                <li> action spaces, </li>
+                <li> policies, </li>
+                <li> trajectories, </li>
+                <li> different forulations of return,</li>
+                <li> the RL optimization problem  </li>
+                <li> and value functions. </li>
+            </ul>
+        </div>
+        <p class="PreviewBox"> &nbsp; </p>
+
+    </div>
+
+    <div class=LogoBanner> 
+        <img src="images/LogoBanner.PNG" alt="" class="LogoBannerIMG">
+    </div>
+
+    <div class="PostBanner">
+        <div class="InformationBlock1">
+        <h2 class="Heading">
+            Demo
+        </h2>
+
+        <p class="Content">
+            One simple integration gives you access to our constantly-improving AI technology. Explore how you integrate with the API with the sample completions below, or browse our <a href="https://beta.openai.com/examples" target="_blank">examples gallery. </a> 
+        </p>
+        </div>
+    
+        <span class="LeftInputBox">
+            <textarea class="wideInput" id="NLPtextBox">  
+import openai 
+    
+prompt = "We’re releasing an API for accessing new AI models developed by OpenAI. Unlike most AI systems which are designed for one use-case, the API today provides a general-purpose “text in, text out” interface, allowing users to try it on virtually any English language task. You can now request access in order to integrate the API into your product, develop an entirely new application, or help us explore the strengths and limits of this technology."
+    
+response = openai.Completion.create(model="davinci", prompt=prompt, stop="\n", temperature=0.9, max_tokens=100)
+    
+print(response)
+    
+            </textarea>
+        </span>
+    
+        <span class="RightInputBox">
+            <textarea class="wideInput" id="rightNLPtextBox">
+We’re releasing an API for accessing new AI models developed by OpenAI. Unlike most AI systems which are designed for one use-case, the API today provides a general-purpose “text in, text out” interface, allowing users to try it on virtually any English language task. You can now request access in order to integrate the API into your product, develop an entirely new application, or help us explore the strengths and limits of this technology.
+    
+            </textarea>
+        </span>
+        <div class="CacheResponse"> 
+            <p class="DecorationBox">
+                &nbsp; 
+            </p>    
+            <button> See Cached Response &nbsp; </button>
+            
+        </div>
+        <br> <br> <br> <br>
+    </div>  
+
+    <div class=WaitListContainer>
+        <div class = "Info">
+            <h2>
+                Simple, Yet Flexible
+            </h2>
+            <p>
+                Our API is designed to be used by anyone, but meets the needs of our own cutting-edge research.
+            </p>
+        </div>
+        <div class = "Info">
+            <h2>
+                Your Data, Your Rules
+            </h2>
+            <p>
+                You retain ownership of your data, and control whether we can use it for training models.
+            </p>
+        </div>
+        <div class = "Info">
+            <h2>    
+                Ready To Go
+            </h2>
+            <p>
+                Our infrastructure already serves millions of API calls per day.
+            </p>
+        </div>
+    </div>
+
+    <div class = "WaitListEnd">
+        <div class="Buttons">
+            <button class="WaitList"> JOIN THE WAITLIST > &nbsp; </button>
+        </div>
+    </div>
+
+    <div class="PoweredBy">
+        <p>
+            POWERED BY <img class = "MicrosoftLogo" src="images/Microsoft Logo.png" alt="Microsoft"> <span class = "MicrosoftAzure"> Microsoft Azure </span>
+            <span class = "Policies">
+                Status &nbsp; &nbsp; Terms & Policies
+            </span>
+        </p>
+    </div>
+</body>
+</html>

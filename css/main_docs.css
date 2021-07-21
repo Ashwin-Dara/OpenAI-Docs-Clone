@@ -1,0 +1,477 @@
+body{
+    margin: 0px;
+}
+@font-face {
+    font-family: 'RobotoSlab-serif';
+    src: url(../font/RobotoSlab-VariableFont_wght.ttf);
+    font-style: normal; 
+    font-weight: 100; 
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../font/OpenSans-Regular.ttf);
+    font-style: normal; 
+    font-weight: 100; 
+}
+@font-face {
+    font-family: 'Volkhoz';
+    src: url(../font/Volkhoz/Volkhov-Regular.ttf);
+}
+@font-face {
+    font-family: 'Railway';
+    src: url(../font/Railway/Raleway-VariableFont_wght.ttf);
+}
+.HomeBarContainer{
+    --RL_margins:30px; 
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+
+    font-family: 'Trebuchet MS', Calibri, 'Gill Sans', 'Gill Sans MT',  sans-serif;
+    font-size: 90%;
+    font-weight: bolder;
+    
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgb(61, 50, 136); 
+    
+    /* Old Value was 10 percent */
+    height: 90px;
+    align-items: center;
+
+}
+.HomeBarContainer > .OpenAI{
+    display: flex;
+    font-size: 120%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-left: 3%;
+    /* This is to have this singular element to the left most */
+    margin-right: auto; 
+}
+.BetaTag{
+    font-size: 60%;
+    font-weight: bold;
+    align-self: flex-end;
+    background-color: #67ac94;
+    padding-right: 3px;
+    padding-left: 3px; 
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 15%;
+    letter-spacing: normal;
+    margin-left: 7px;
+   /* margin-right: 65.7%;*/
+}
+.HomeBarContainer > .About{
+    margin-left: var(--RL_margins);
+    margin-right: var(--RL_margins);
+}
+.HomeBarContainer > .Examples{
+    margin-left: var(--RL_margins);
+    margin-right: var(--RL_margins);
+}
+.HomeBarContainer > .Docs{
+    margin-left: var(--RL_margins);
+    margin-right: var(--RL_margins);
+}
+.HomeBarContainer > .Pricing{
+    margin-left: var(--RL_margins);
+    margin-right: var(--RL_margins);
+}
+.HomeBarContainer > .Pricing{
+    margin-left: var(--RL_margins);
+    margin-right: var(--RL_margins);
+}
+.HomeBarContainer > .LogIn{
+    margin-left: var(--RL_margins);
+    margin-right: var(--RL_margins);
+}
+.HomeBarContainer > .Join{
+    border-radius: 8px;
+    background-color: rgb(76, 62, 204);
+    padding: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: var(--RL_margins);
+    margin-right: 40px;
+}
+.InformationBlock1{
+    --Info-Block-Left-Margin: 20%;
+    margin-left: var(--Info-Block-Left-Margin);
+}
+.WelcomeBanner{
+    color: #0047AB;
+    background-color: rgba(189, 186, 228, 0.35);
+    padding: 5px;
+    width: fit-content;
+    font-family: Calibri;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.Heading{
+    font-family: Railway; 
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.Content{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal; 
+    font-size: 22px;
+    color: rgb(131, 131, 131);
+    width:calc(90% - var(--Info-Block-Left-Margin));
+    line-height: 38px;
+}
+.Buttons > .WaitList{
+    position: relative;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+
+    letter-spacing: 1px;
+    
+    color: seashell;
+    background-color: #0023b0;
+    border-color: #0023b0; 
+    border-radius: 4px;
+    border: solid;
+    
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-right: 0px; 
+    left: 20%; 
+
+    margin-top: 12px;
+}
+.Buttons > .ExploreDocs{
+    position: relative;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+
+    letter-spacing: 1px;
+    
+    color:rgba(0, 0, 0, 0.8);
+    background-color: #e7e7e7;
+    border-color: #e7e7e7; 
+    border-radius: 4px;
+    border-style: solid;
+    
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 0px; 
+    left: 20.5%; 
+
+    margin-top: 12px;
+}
+
+.GradientContent{
+    background: rgb(61,93,204);
+    background: linear-gradient(90deg, rgba(61,93,204,1) 31%, rgba(200,64,200,1) 69%, rgba(214,153,78,1) 100%);
+    height: 800px; 
+    margin-top:  60px;
+}
+.GradientContent > .GradientContainer{
+    position: relative;
+    display: flex;
+    color: rgba(255, 255, 255, 0.8);
+    justify-content: space-evenly;
+    width: 1000px;
+    border-top: 1px solid aliceblue;
+    border-color: azure;
+    border-bottom: 1px solid aliceblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto; /* THIS IS HOW TO CENTER SOMETHING */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 85%;
+    top:70px;
+    letter-spacing: 1px;
+}
+
+.RLBlock{
+    position: relative;
+    font-family: Railway;
+    font-weight: lighter;
+    top: 100px; 
+    background-color: white;
+    width: 1000px;
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: auto;
+    line-height: 30px;
+    font-size: 18px;
+    color: rgba(0, 0, 0);
+    
+}
+
+.RLBlock > p{
+    color: rgba(26, 26, 26, 0.65);
+}
+.RLBlock > h2{
+    padding-top: 10px;
+    padding-right: 50px;
+    text-align: left;
+    font-size: 25px;
+}
+.RLBlock > h3{
+    font-weight:500;
+}
+.RLImageContainer{
+    display: flex;
+    flex-direction:column;
+    align-content: flex-start;
+    width: 40%;
+    float: left;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    background-color: rgba(220, 255, 231, 0.29);
+    height: 1000px;
+    gap: 50px;
+}
+}
+.MarioRL{
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+
+}
+
+.RLBlock > p{
+    padding-right: 50px;
+    text-align: justify;
+}
+
+.RLBlock > ul{
+    color: rgba(26, 26, 26, 0.65);
+    position: relative;
+    left: 30px;
+    margin-left: 70px;
+}
+
+
+.RLBlock > .RLPolicyIMG{
+    padding-top: 100px;
+    width: 40%;
+
+}
+.PreviewBox{
+    position: relative;
+    top: 100px;
+    background: rgb(185, 203, 255);
+    height: 20px; 
+    padding-bottom: 7px;
+    width: 1000px;
+    margin: auto;
+}
+
+.LogoBannerIMG{
+    width: 100%;
+
+}
+
+.PostBanner{
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+.PostBanner > .InformationBlock1 > .Heading{
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.PostBanner > .InformationBlock1 > .Content{
+    line-height: 35px;
+}
+
+.PostBanner > .InformationBlock1 > .Content > a:link{
+    color: green;
+}
+
+.PostBanner > .InformationBlock1 > .Content > a:hover{
+    color: rgba(0, 34, 128, 0.5);
+}
+
+
+.PostBanner > .InformationBlock1 > .Content > a:active{
+    color: blueviolet;
+}
+
+/*
+.DropDown{
+    position: relative;
+    left: 20%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal; 
+    color: rgb(131, 131, 131);
+}*/
+
+.PostBanner{
+    background-color: rgba(169, 207, 200, 0.15);
+}
+
+.LeftInputBox{
+    position: relative;
+bottom: 10%;    
+left: 20%;
+} 
+
+
+#NLPtextBox{
+    width: 30%;
+    height: 43.4%;
+    font-size: 17px;
+    word-break: keep-all;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.RightInputBox{
+    position: relative;
+    left: 22%;
+    margin-bottom: 100px;
+    top: 2.5%;
+}
+
+#rightNLPtextBox{
+    width: 30%;
+    height: 43.5%;
+    background-color: rgba(48, 48, 48);
+    color: rgba(255, 255, 255, 0.8);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.CacheResponse{
+    position: relative;
+    margin-top: -5px;
+    left: 39.5%;
+}
+
+.CacheResponse > button{
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+
+    letter-spacing: 1px;
+    
+    color: seashell;
+    background-color: #0023b0d2;
+    border-color: #0023b0; 
+    border-radius: 4px;
+    border: solid;
+    
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-right: 0px; 
+
+    margin-top: 12px;
+    margin-right: 100px;
+
+    right: 2%;
+}
+
+.DecorationBox{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    outline-color: rgba(105, 105, 105, 0.5);
+    outline-style: solid;
+    outline-width: 1px;
+    width: 29.9%;
+    height: 120%;
+
+    left: -19.45%;
+    top: -30%;
+
+}
+
+.WaitListContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    left: 2%;
+    gap: 60px;
+    width: 65%;
+}
+.WaitListContainer > .Info > h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: -10px;
+    margin-top: 60px;
+}
+.WaitListContainer > .Info > p{    
+    font-family: 'Railway';
+    font-size: 20px;
+    color: rgb(131, 131, 131);
+    line-height: 38px;
+    text-align: left;
+    width: 300px;
+}
+
+.WaitListEnd{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 32%;
+}
+
+.PoweredBy > p{
+    position: relative;
+    border-top: rgba(204, 204, 204, 0.774);
+    color: rgba(124, 124, 124, 0.85);
+    border-bottom: white;
+    border-style: solid;
+    border-width: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight: bold;
+    padding-left: 250px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.PoweredBy > p > .MicrosoftLogo{
+    position: relative;
+    width: 37px;
+    padding: 0px;
+    top: 11px;
+}
+
+.PoweredBy > p > .MicrosoftAzure{
+    font-size: 20px;
+    color: rgba(44, 44, 44, 0.8);
+    letter-spacing: normal;
+}
+
+.PoweredBy > p > .Policies{
+    position: relative;
+    font-weight: normal;
+    font-size: 15px;
+    left: 40%;
+    color: rgb(102, 102, 102);
+}
